@@ -2460,7 +2460,7 @@ dependencies = [
  "futures-util",
  "gtk",
  "gtk-layer-shell",
- "scribe-keys",
+ "handy-keys",
  "hf-hub",
  "hound",
  "log",
@@ -2509,7 +2509,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "scribe-keys"
+name = "handy-keys"
 version = "0.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "88d0d9b8fc275b2472698d55d2f27739efd7b8f0e257e923c1c18a6e8a878d7b"

@@ -27,7 +27,7 @@
 //! polled from a dedicated recording thread. Events are emitted to the frontend
 //! via Tauri's event system.
 
-use scribe_keys::{Hotkey, HotkeyId, HotkeyManager, HotkeyState, KeyboardListener};
+use handy_keys::{Hotkey, HotkeyId, HotkeyManager, HotkeyState, KeyboardListener};
 use log::{debug, error, info};
 use serde::Serialize;
 use specta::Type;
@@ -318,7 +318,7 @@ impl ScribeKeysState {
                     is_key_down: key_event.is_key_down,
                     hotkey_string: key_event
                         .as_hotkey()
-                        .map(|h| h.to_scribe_string())
+                        .map(|h| h.to_handy_string())
                         .unwrap_or_default(),
                 };
 
